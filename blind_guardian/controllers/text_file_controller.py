@@ -1,11 +1,11 @@
-import os.path
+import os
 
-class FileController():
+class TextFileController():
     """Class that has the methods to deal with the file that will be converted do voice."""
     
-    DEFAULT_PATH = './assets/manual.txt'
+    DEFAULT_PATH = os.getcwd() + '/blind_guardian/assets/manual.txt'
     
-    PROVIDED_PATH = input('Digite o diretório do arquivo de texto a ser lido...')
+    PROVIDED_PATH = input('Digite o diretório do arquivo de texto a ser lido...\n')
     
     def load_file(path=PROVIDED_PATH, default_path=DEFAULT_PATH):
         
