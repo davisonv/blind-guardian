@@ -1,5 +1,5 @@
-from pygame import mixer
-import os
+from utils import bcolors
+from playsound import playsound
 
 
 class PlayerController():
@@ -7,9 +7,7 @@ class PlayerController():
     
     def play(file_name):
         try:
-            mixer.init()
-            mixer.music.load(os.getcwd() + '/' + file_name)
-            mixer.music.play()
+            playsound(f'./assets/audios/{file_name}')
         except Exception as e:
-            print('Erro ao executar arquivo de voz...')
+            print(bcolors.FAIL + 'Erro ao executar arquivo de voz...')
             print(e)

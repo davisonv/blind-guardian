@@ -3,7 +3,7 @@ import os
 class TextFileController():
     """Class that has the methods to deal with the file that will be converted do voice."""
     
-    DEFAULT_PATH = os.getcwd() + '/blind_guardian/assets/manual.txt'
+    DEFAULT_PATH = os.getcwd() + '/assets/manual.txt'
     
     PROVIDED_PATH = input('Digite o diretório do arquivo de texto a ser lido...\n')
     

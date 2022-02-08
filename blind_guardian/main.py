@@ -12,7 +12,6 @@ voice_file = VoiceFileController.generate_and_save(data_to_read)
 
 #play the voice file
 if input('Deseja tocar o arquivo de voz gerado?\n'+'S/N\n').upper() == 'S':
-    print('to aqui')
     PlayerController.play(voice_file)
 
 
