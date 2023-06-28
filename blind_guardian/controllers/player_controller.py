@@ -3,7 +3,7 @@ from playsound import playsound
 
 
 class PlayerController():
-    """class with the methods to play de voice file."""
+    """class with the methods to play the voice file."""
     
     def play(file_name):
         try:
